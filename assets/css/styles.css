@@ -1,0 +1,171 @@
+:root[data-bs-theme='light'] {
+    --accent-color: #cce4f6;
+    --accent-color-light: #e3f2fd;
+    --background-color: #ffffff;
+    --text-color: #333333;
+}
+:root[data-bs-theme='dark'] {
+    --accent-color: #1976d2;
+    --accent-color-light: #0d47a1;
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    max-width: 100vw;
+}
+
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.hero {
+    background: var(--accent-color);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--accent-color);
+}
+
+a {
+    color: var(--accent-color);
+}
+
+a:hover {
+    color: #005999;
+}
+
+.btn-outline-secondary,
+.btn-outline-secondary:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+.form-select {
+    border-color: var(--accent-color);
+}
+
+.room-section {
+    padding: 4rem 2rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.gallery img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.room-photos img {
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.room-photos {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.5rem;
+}
+
+.contact-section {
+    background: var(--accent-color-light);
+    padding: 4rem 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .room-photos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.swiper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    overflow: hidden;
+}
+
+.swiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 576px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+    .swiper-pagination {
+        bottom: 10px !important;
+    }
+    .container {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+    .contact-section .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-section .col-md-6 {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    #languageSelectFooter {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 9999;
+        border-top: 1px solid #ccc;
+        padding: 0.5rem;
+        background-color: var(--background-color);
+    }
+}
+
+
+@media (max-width: 400px) {
+    .hero {
+        padding: 2rem 1rem;
+    }
+    .room-section {
+        padding: 2rem 1rem;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+/*swiper fixes*/
+.swiper {
+    max-width: 100%;
+    overflow: hidden;
+}
+.swiper-slide {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: hidden;
+}
