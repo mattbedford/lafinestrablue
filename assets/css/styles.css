@@ -1,12 +1,12 @@
 :root[data-bs-theme='light'] {
     --accent-color: #52a4d3;
-    --accent-color-light: #e3f2fd;
+    --accent-color-light: #318DC1;
     --background-color: #ffffff;
     --text-color: #333333;
 }
 :root[data-bs-theme='dark'] {
     --accent-color: #52a4d3;
-    --accent-color-light: #89b9d4;
+    --accent-color-light: #222222;
     --background-color: #121212;
     --text-color: #e0e0e0;
 }
@@ -37,8 +37,25 @@ body {
 .container {
     max-width: 1350px;
     margin: 0 auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+}
+
+/*Header*/
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+.navbar-brand svg {
+    width:100px;
+    fill: var(--accent-color);
+}
+.navbar-brand h1 {
+    margin-left:20px;
+    font-size: 2.6rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.navbar-brand h1 span {
+    color: var(--accent-color);
 }
 
 .hero {
@@ -51,6 +68,11 @@ body {
     text-align: center;
     min-height:60vh;
     min-height:60dvh;
+}
+
+.hero h1,
+.hero p {
+    color: var(--text-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -84,6 +106,7 @@ a:hover {
     padding: 4rem 2rem;
 }
 
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -105,6 +128,34 @@ a:hover {
 .room-photos {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 0.5rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:45px;
+    height:45px;
+    border-radius:100%;
+    box-sizing:content-box;
+    background: var(--accent-color) !important;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px;
+    font-weight:600;
+    color:var(--background-color);
+}
+.swiper-button-next:after {
+    padding-left:3px;
+}
+.swiper-button-prev:after {
+    padding-right:3px;
+}
+
+.thumbnails {
+    margin-top:1rem;
 }
 
 .contact-section {
@@ -133,6 +184,16 @@ a:hover {
 }
 
 @media (max-width: 576px) {
+    .navbar-brand svg {
+        width:50px;
+        fill: var(--accent-color);
+    }
+    .navbar-brand h1 {
+        margin-left:20px;
+        font-size: 2rem;
+        font-weight: 400;
+        color: var(--text-color);
+    }
     .swiper-button-prev,
     .swiper-button-next {
         display: none;
