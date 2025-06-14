@@ -1,15 +1,27 @@
 :root[data-bs-theme='light'] {
-    --accent-color: #cce4f6;
+    --accent-color: #52a4d3;
     --accent-color-light: #e3f2fd;
     --background-color: #ffffff;
     --text-color: #333333;
 }
 :root[data-bs-theme='dark'] {
-    --accent-color: #1976d2;
-    --accent-color-light: #0d47a1;
+    --accent-color: #52a4d3;
+    --accent-color-light: #89b9d4;
     --background-color: #121212;
     --text-color: #e0e0e0;
 }
+
+p,a, ol, ul, li {
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 
 html, body {
     height: 100%;
@@ -31,8 +43,14 @@ body {
 
 .hero {
     background: var(--accent-color);
+    background-image: url('../img/la-finestra-blu-marche-beach.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 4rem 2rem;
     text-align: center;
+    min-height:60vh;
+    min-height:60dvh;
 }
 
 h1, h2, h3, h4, h5, h6 {
