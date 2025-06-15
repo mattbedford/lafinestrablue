@@ -1,6 +1,6 @@
 :root[data-bs-theme='light'] {
     --accent-color: #52a4d3;
-    --accent-color-light: #318DC1;
+    --accent-color-light: #D38152;
     --background-color: #ffffff;
     --text-color: #333333;
 }
@@ -12,9 +12,10 @@
 }
 
 p,a, ol, ul, li {
-        font-family: "Barlow Condensed", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Barlow Condensed", sans-serif;
@@ -35,7 +36,7 @@ body {
 }
 
 .container {
-    max-width: 1350px;
+    max-width: 1250px;
     margin: 0 auto;
 }
 
@@ -59,20 +60,64 @@ body {
 }
 
 .hero {
+    display:flex;
+    align-items:center;
+    position:relative;
     background: var(--accent-color);
-    background-image: url('../img/la-finestra-blu-marche-beach.webp');
+    background-image: url('../img/aloha-beach-lafinestrablu.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 4rem 2rem;
     text-align: center;
-    min-height:60vh;
-    min-height:60dvh;
+    min-height:80vh;
+    min-height:80dvh;
+    overflow:hidden;
+    z-index:2;
 }
-
-.hero h1,
+.wave-nav {
+    fill: var(--background-color);
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    width: 100%;
+    max-width: 100%;
+}
+.hero h1 {
+    font-size:70px;
+    color: var(--text-color);
+}
 .hero p {
     color: var(--text-color);
+    font-size:26px;
+    font-weight:600;
+}
+
+.mission {
+    position:relative;
+    background: var(--accent-color-light);
+    color:var(--background-color);
+    padding:100px 0 !important;
+    margin-bottom:180px !important;
+    z-index:3;
+    border-top:3px solid var(--accent-color-light);
+}
+[data-bs-theme='dark'] .mission,
+[data-bs-theme='light'] .mission *,
+[data-bs-theme='light'] .mission h3 {
+    color:var(--text-color) !important;
+}
+.wave-mission {
+    fill: var(--accent-color-light);
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    z-index: 0;
+    transform: rotate(180deg);
+    width: 100%;
+    max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -120,6 +165,13 @@ a:hover {
     cursor: pointer;
 }
 
+
+.room-wrap h4 {
+    font-style:italic;
+    font-weight:400;
+    color:var(--text-color);
+}
+
 .room-photos img {
     border-radius: 4px;
     cursor: pointer;
@@ -159,8 +211,23 @@ a:hover {
 }
 
 .contact-section {
+    position:relative;
     background: var(--accent-color-light);
     padding: 4rem 2rem;
+    z-index:3;
+}
+.contacts-texts,
+.contacts-texts *,
+.contacts-texts a {
+    color:var(--background-color);
+}
+[data-bs-theme='dark'] .contacts-texts,
+[data-bs-theme='dark'] .contacts-texts a,
+[data-bs-theme='dark'] .contacts-texts p {
+    color:var(--text-color);
+}
+[data-bs-theme='dark'] .contacts-texts strong {
+    color:var(--accent-color);
 }
 
 /* Responsive adjustments */
@@ -213,6 +280,7 @@ a:hover {
         width: 100%;
         margin-bottom: 1.5rem;
     }
+
     #languageSelectFooter {
         position: fixed;
         bottom: 0;
@@ -238,6 +306,14 @@ a:hover {
         grid-template-columns: 1fr;
     }
 }
+
+@media screen and (min-width:1300px) {
+    .wave-nav {
+        top:-30px;
+    }
+}
+
+
 /*swiper fixes*/
 .swiper {
     max-width: 100%;
@@ -247,4 +323,14 @@ a:hover {
     height: auto !important;
     min-height: 0 !important;
     overflow: hidden;
+}
+
+.wave-pre-contact {
+    position:relative;
+    background:var(--accent-color-light);
+    z-index:1;
+}
+.wave-pre-contact svg {
+    fill:var(--background-color);
+    margin-bottom:-100px;
 }
