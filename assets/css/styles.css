@@ -23,13 +23,13 @@ h1, h2, h3, h4, h5, h6 {
     font-style: normal;
 }
 
-
 html, body {
     height: 100%;
     overflow-x: hidden;
     background-color: var(--background-color);
     color: var(--text-color);
     transition: background-color 0.3s ease, color 0.3s ease;
+    scroll-behavior: smooth;
 }
 body {
     background-color: var(--background-color);
@@ -62,19 +62,30 @@ body {
     color: var(--accent-color);
 }
 
+.nav-wrap {
+    display:flex;
+    list-style:none;
+    gap:2rem;
+    align-items:center;
+    margin:0 2rem 0.25rem 0;
+    font-weight:800;
+    text-transform:uppercase;
+    pointer:cursor;
+}
+
 .hero {
     display:flex;
     align-items:center;
     position:relative;
     background: var(--accent-color);
-    background-image: url('../img/aloha-beach-lafinestrablu.webp');
+    background-image: url('../img/spiaggia-la-finestra-blu-3.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 4rem 2rem;
+    padding: 6rem 2rem 4rem 2rem;
     text-align: center;
-    min-height:80vh;
-    min-height:80dvh;
+    min-height:85vh;
+    min-height:85dvh;
     overflow:hidden;
     z-index:2;
 }
@@ -101,11 +112,15 @@ body {
 .mission {
     position:relative;
     background: var(--accent-color-light);
-    color:var(--background-color);
+
     padding:100px 0 !important;
     margin-bottom:180px !important;
     z-index:3;
     border-top:3px solid var(--accent-color-light);
+}
+.container.mission-texts p,
+.container.mission-texts h2 {
+    color:var(--background-color) !important;
 }
 [data-bs-theme='dark'] .mission,
 [data-bs-theme='light'] .mission *,
@@ -115,7 +130,7 @@ body {
 .wave-mission {
     fill: var(--accent-color-light);
     position: absolute;
-    bottom: -30px;
+    bottom: -50px;
     left: 0;
     z-index: 0;
     transform: rotate(180deg);
@@ -168,7 +183,10 @@ a:hover {
     cursor: pointer;
 }
 
-
+.room-wrap {
+    margin-top:2rem !important;
+    margin-bottom:8rem !important;
+}
 .room-wrap h4 {
     font-style:italic;
     font-weight:400;
@@ -178,6 +196,16 @@ a:hover {
 .room-photos img {
     border-radius: 4px;
     cursor: pointer;
+}
+.room-photos img:not(.room-photos .thumbnails img) {
+    height:550px !important;
+    min-height:500px;
+    max-height:500px;
+    object-fit: cover;
+}
+.room-photos .thumbnails img {
+    height:120px !important;
+    object-fit: cover;
 }
 
 .room-photos {
