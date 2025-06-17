@@ -67,7 +67,7 @@ body {
     list-style:none;
     gap:2rem;
     align-items:center;
-    margin:0 2rem 0.25rem 0;
+    margin-left:auto;
     font-weight:800;
     text-transform:uppercase;
     pointer:cursor;
