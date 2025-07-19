@@ -1,275 +1,643 @@
 <!DOCTYPE html>
-<html lang="it" data-bs-theme="light">
+<html lang="zxx">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Welcome to La Finestra Blu B&B - A peaceful, inclusive retreat nestled in nature">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Benvenuti | La Finestra Blu B&B</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Simple and easy to edit Bed and Breakfast site template">
+    <meta name="author" content="Matt Bedford">
+    <title>La Finestra Blu B&B</title>
+    
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="img/shutter.webp" href="img/LFB-icon.png">
+
+    <!-- GOOGLE WEB FONT-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/vendors.min.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
 </head>
-<body>
-<nav class="navbar navbar-expand-md" aria-label="Main navigation" id="navbar">
-    <div class="container d-flex justify-content-between align-items-center">
-        <a class="navbar-brand d-flex align-items-center" href="/" aria-label="Site logo...">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 638 616">
-                <path d="M126.8.7h224.6Q381 .6 410.6.6h104.1c4.7.6 8.2 2 11.2 5.7 1.3 3.1 1.5 5.3 1.4 8.6v11.2q0 5-.1 10.1 0 5.2-.1 10.4 0 10.2-.1 20.4h3.8q4.4-.1 8.8-.1h8.9q4.4-.1 8.8-.1h8.8q9.1 0 18.2-.1 8.8-.1 17.6-.1h9q1.2 0 2.3-.1h7.5c5.9 0 9.6.8 14.3 4.5 1.9 4.4 2.3 8.3 2.3 13.1v230.1q.1 30.4.1 60.7v106.7c-.5 4.7-2 8.1-5.5 11.3-4.3 1.6-8.3 1.5-12.8 1.4h-25.3q-3.1 0-6.2-.1h-6.2q-9.2 0-18.4-.1h-18q-4.5 0-9-.1h-9v43c10.9-.1 10.9-.1 21.7-.3h6.3c5.2 0 8.6.8 13 3.3 2.8 3.8 3.4 6.5 3.4 11.2v52.9c-.5 3.5-1.1 5.2-3.4 7.9-5.2 2.7-9.5 3.4-15.4 3.4H428.4q-28.4.1-56.9.1h-2.1l-17.5-.1q-33.9 0-67.9.1H83.2c-5.3 0-9.9-1.2-14.2-4.5-2.1-3.4-2.3-6.1-2.3-10.1v-7.6l-.1-4.2v-19.6q-.1-4.2-.1-8.5v-6c0-10.1 0-10.1 2.2-13.8 4.1-4 7.5-4.4 13.2-4.4h4.3q3.8 0 7.6.1l17.2.1v-43l-9.4.1q-15.3.1-30.6.1-9.3 0-18.6.1-9 .1-18 .1h-9.2q-1.2 0-2.4.1h-7.6c-4.1 0-6.6-.1-10.2-2.2C1.1 487.8.7 483.8.7 478V306.5q.1-27.8 0-55.7V79.2C1 76 1.5 73.8 3 71c5.6-4.3 10.2-4.6 17.1-4.5h3q4.8.1 9.7.1h6.7q8.9.1 17.8.1 9.1.1 18.1.1l35.6.2v-2.2q-.1-2.6-.1-5.2v-5.1q-.1-2.6-.1-5.2v-5.1q0-5.3-.1-10.6v-3.1q0-1.5-.1-3v-6.1l-.1-3.8v-6.8c.6-3.6 1.9-5.2 4.5-7.8 4-2 7.4-2.3 11.8-2.3zM134 24v43h20l1-10.2c.3-3.4.8-5.5 2.9-8.3 3.4-2.5 6.2-2.6 10.3-2.6h7l3.8-.1h120.1q22.6 0 45.2-.1h72.5q11.1-.1 22.2-.1h33.4c3.2.5 5 1.5 7.6 3.4 3.4 5.8 3.6 11.4 4 18h20V24zm43 44v240h131V68zm153 0v240h131V68zM24 90v382h130V90zm460 0v382h130V90zM177 330v164h131V330zm153 0v164h131V330zM134 494v43h370v-43h-20l-1 10.2c-.3 3.4-.8 5.5-3 8.3-3.2 2.4-5.1 2.6-9.1 2.6H460q-5.4.1-10.7.1H339.1q-22.7 0-45.5.1h-73q-11.2.1-22.3.1h-33.7c-3.1-.5-5-1.5-7.6-3.4-2.8-5.5-2.6-12-3-18zm-44 66v32h458v-32z" class="s0"/>
-                <path d="M59.1 241.7h24.5q6.6 0 13.2-.1h25.8c3.7.4 5.5 1.2 8.4 3.4 2.4 3.9 3.4 6.7 2.5 11.2-1.2 3.8-3 5.7-6.5 7.8-3.4 1.1-6 1.1-9.6 1.2H94.7q-6.2.1-12.3.1h-14q-3.1.1-6.3.1h-3.7c-4.9-.6-9-1.8-12.3-5.7-1.4-3.5-1.6-5.9-1.1-9.7 3.7-6.7 6.5-8.2 14.1-8.3zm461.8 109h22.6q6.1 0 12.2-.1h23.9c4.9.6 9 1.8 12.3 5.6 1.4 3.6 1.6 6 1.1 9.8-2.1 4-3.8 6.4-8 8-3.2.3-3.2.3-7.1.3h-37.1q-5.1.1-10.1.1h-15.4c-3.6-.4-5.4-1.2-8.3-3.4-2.4-4-3.4-6.7-2.3-11.3 1.3-3.7 1.3-3.7 3.3-6.7 4.4-1.9 8.2-2.3 12.9-2.3zm-459 0h22.7q6.1.1 12.2 0h23.9c3.4.3 6.1 1 9.3 2.3 2.8 3.4 3.8 6.6 4 11-1.2 3.8-2 6.2-5.2 8.7-3.5 1.6-6.1 1.7-10 1.7h-13.9q-5.1.1-10.1 0-6.5 0-13 .1H56.5c-4.7-.7-8-2.6-10.9-6.3-1.3-4.7-1.1-8.1 1-12.5 4.2-4.8 9.2-5 15.3-5zm0-164h22.7q6.1.1 12.2 0h23.9c3.4.3 6.1 1 9.3 2.3 2.8 3.4 3.8 6.6 4 11-1.2 3.8-2 6.2-5.2 8.7-3.5 1.6-6.1 1.7-10 1.7h-13.9q-5.1.1-10.1 0-6.5 0-13 .1H56.5c-4.7-.7-8-2.6-10.9-6.3-1.3-4.7-1.1-8.1 1-12.5 4.2-4.8 9.2-5 15.3-5zm458.2 219h8.9l4.8-.1h22.8q4.9-.1 9.9-.1h15.1c4.6.7 7.9 2.6 10.8 6.3 1.2 4.2 1.1 7.8-.5 11.9-3.3 3.9-7.4 5.1-12.3 5.7h-62.3c-4.5-.5-7.9-2-11.1-5.2-1.6-2.9-2.1-4.8-2.2-8.2.9-3 2-5.6 4-8 4.1-2.1 7.5-2.3 12.1-2.3zm-460.1 0h23.8q6.4 0 12.8-.1h25.1c4.4.5 7 2 10 5.3 1.6 2.5 2.2 4.1 2.3 7.1-1.5 4.5-2.8 7.6-7 10-3.4 1.1-6.1 1.1-9.8 1.2h-8.8l-2.4.1H87.4q-1.5 0-3.1.1H71.4q-2.4 0-4.7.1H56.4c-4.6-.7-7.9-2.6-10.8-6.3-1.3-4.8-1.2-8.1 1.1-12.5 4-4.8 7.2-5 13.3-5zm460.1-164h8.9l4.8-.1h22.8q4.9-.1 9.9-.1h15.1c4.6.7 7.9 2.6 10.8 6.3 1.2 4.2 1.1 7.8-.5 11.9-3.3 3.9-7.4 5.1-12.3 5.7h-62.3c-4.5-.5-7.9-2-11.1-5.2-1.6-2.9-2.1-4.8-2.2-8.2.9-3 2-5.6 4-8 4.1-2.1 7.5-2.3 12.1-2.3zm.8-55h22.6q6.1 0 12.2-.1h23.9c4.9.6 9 1.8 12.3 5.6 1.8 4.5 1.8 8.1 0 12.5-3.1 3.8-6.5 5.1-11.3 5.7h-17.2q-4.9.1-9.9 0-6.3 0-12.5.1h-24.6c-4.1-.6-6.2-1.9-9.4-4.5-2.5-4.1-3.2-6-2.3-10.8 2.3-5.8 2.3-5.8 6-7.4 3.5-.9 6.6-1.1 10.2-1.1zm-2.5 109.8q1 0 2.1-.1h46.2q2.5 0 4.9-.1 3.5 0 6.9.1h4c4.6.8 6.2 2.3 9.5 5.6 1.6 4.1 1.5 7.8-.2 11.9-2.8 3.3-4.6 5-9.1 5.5h-67.3c-3.7-.4-5.5-1.2-8.4-3.4-2.4-3.9-3.4-6.7-2.5-11.2 1.7-7 7.4-8.3 13.9-8.3zm-459.1.1h14.3q5.2-.1 10.5 0 6.7 0 13.4-.1h26.1c3.9.6 5.6 1.7 8.4 4.5 2.2 4.1 2.2 7.4.9 11.8-2.1 3.5-3.2 4.5-6.9 6.2-3.4.4-3.4.4-7.3.4h-2.1q-.9.1-1.8.1H94.3q-6.5 0-13.1.1H55.5c-4.6-.8-6.2-2.3-9.5-5.6-1.6-4.1-1.5-7.9.2-11.9 4.1-4.7 6.7-5.5 13.1-5.5zm459.1-164.1q1 0 2.1-.1h46.2q2.5 0 4.9-.1 3.5 0 6.9.1h4c4.6.8 6.2 2.3 9.5 5.6 1.6 4.1 1.5 7.8-.2 11.9-2.8 3.3-4.6 5-9.1 5.5h-67.3c-3.7-.4-5.5-1.2-8.4-3.4-2.4-3.9-3.4-6.7-2.5-11.2 1.7-7 7.4-8.3 13.9-8.3zm-459.1.1h14.3q5.2-.1 10.5 0 6.7 0 13.4-.1h26.1c3.9.6 5.6 1.7 8.4 4.5 2.2 4.1 2.2 7.4.9 11.8-2.1 3.5-3.2 4.5-6.9 6.2-3.4.4-3.4.4-7.3.4h-2.1q-.9.1-1.8.1H94.3q-6.5 0-13.1.1H55.5c-4.6-.8-6.2-2.3-9.5-5.6-1.6-4.1-1.5-7.9.2-11.9 4.1-4.7 6.7-5.5 13.1-5.5z" class="s0"/>
-            </svg>
-            <h1 class="ms-2 mb-0">La Finestra Blu <span>B&B</span></h1>
+
+<body data-bs-spy="scroll" data-bs-offset="120" data-bs-target="#mainNav"> 
+
+    <div id="preloader">
+        <div data-loader="circle-side"></div>
+    </div><!-- /Page Preload -->
+
+    <header class="fixed_header menu_v1">
+        <div class="layer"></div><!-- Opacity Mask -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3 col-5">
+                    <a href="index.html" class="logo_normal"><img src="img/LFB-logo-large-white.webp" width="300" alt="" class="img-fluid"></a>
+                    <a href="index.html" class="logo_sticky"><img src="img/LFB-logo-large-transparent-bgr.webp" width="250" alt="" class="img-fluid"></a>
+                </div>
+                <div class="col-md-9 col-7">
+                    <div class="main-menu">
+                        <a href="#0" class="closebt open_close_menu"><i class="bi bi-x"></i></a>
+                        <div class="logo_panel"><img src="img/logo_sticky.svg" width="180" height="34" alt=""></div>
+                        <nav id="mainNav">
+                            <ul>
+                                <li><a href="#about" class="js-scroll-trigger animated_link">About</a></li>
+                                <li><a href="#rooms" class="js-scroll-trigger animated_link">Camere</a></li>
+                                <li><a href="#gallery" class="js-scroll-trigger animated_link">Foto</a></li>
+                                <li><a href="#contacts" class="js-scroll-trigger animated_link">Contatti</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="hamburger_2 open_close_menu float-end">
+                        <div class="hamburger__box">
+                            <div class="hamburger__inner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- container -->
+    </header><!-- End Header -->
+ 
+    <main>
+
+        <div id="carousel-home">
+            <div class="owl-carousel owl-theme kenburns">
+                <div class="owl-slide background-image cover" data-background="url(img/slides/la-finestra-blu-marche-beach.webp)">
+                    <div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0, 0, 0, 0.2)">
+                        <div class="container">
+                            <div class="row justify-content-center justify-content-md-start">
+                                <div class="col-lg-6 static">
+                                    <div class="slide-text white">
+                                        <small class="owl-slide-animated owl-slide-title" style="display: inline-block;padding:4px; background:white;">La Finestra Blue B&B</small>
+                                        <h2 class="owl-slide-animated owl-slide-title-2">Come a casa tua, solo a due passi dal mare!</h2>
+                                        <div class="owl-slide-animated owl-slide-title-3"><a class="btn_1 outline white mt-3 btn_scrollto" href="#about">Scopri</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/owl-slide-->
+                <div class="owl-slide background-image cover" data-background="url(img/slides/welcome-la-finestra-blu.webp)">
+                    <div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0, 0, 0, 0.2)">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 static">
+                                    <div class="slide-text white text-center">
+                                        <small class="owl-slide-animated owl-slide-title" style="display: inline-block;padding:4px; background:white;">La Finestra Blue B&B</small>
+                                        <h2 class="owl-slide-animated owl-slide-title-2">Un ambiente davvero accogliente</h2>
+                                        <div class="owl-slide-animated owl-slide-title-3"><a class="btn_1 outline white mt-3 btn_scrollto" href="#about">Scopri</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/owl-slide-->
+                <div class="owl-slide background-image cover" data-background="url(img/slides/bedroom-la-finestra-blu-b-n-b.webp)">
+                    <div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0, 0, 0, 0.2)">
+                        <div class="container">
+                            <div class="row justify-content-center justify-content-md-end">
+                                <div class="col-lg-6 static">
+                                    <div class="slide-text text-end white">
+                                        <small class="owl-slide-animated owl-slide-title" style="display: inline-block;padding:4px; background:white;">La Finestra Blue B&B</small>
+                                        <h2 class="owl-slide-animated owl-slide-title-2">Soggiorni piacevoli con ogni confort</h2>
+                                        <div class="owl-slide-animated owl-slide-title-3"><a class="btn_1 outline white mt-3 btn_scrollto" href="#about">Scopri</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/owl-slide-->
+                </div>
+            </div>
+            <div class="lang_wp">
+                <div class="styled-select lang-selector">
+                    <select>
+                        <option value="Italiano" selected="">Italian0</option>
+                        <option value="English">English</option>
+                    </select>
+                </div>
+            </div>
+            <!-- /lang_wp -->
+        </div>
+        <!--/carousel-->
+
+        <div class="bg_white" id="about">
+            <div class="container margin_120_95">
+                <div class="row justify-content-between flex-lg-row-reverse align-items-center">
+                    <div class="col-lg-5">
+                        <div class="parallax_wrapper">
+                            <img src="img/portico-la-finestra-blu-rilassamento.webp" alt="Area comune per mangiare o rilassare in confort" class="img-fluid rounded-img">
+                            <div data-cue="slideInUp" class="img_over"><span data-jarallax-element="-30"><img src="/img/bedroom-3-la-finestra-blu.webp" alt="Una delle camere del B&B La Finestra Blu" class="rounded-img"></span></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="intro">
+                            <div class="title">
+                                <small>About</small>
+                                <h2>Come a casa tua, solo a due passi dal mare</h2>
+                            </div>
+                            <p class="lead"><strong>La Finestra Blu</strong> è un B&B di nuova ristrutturazione a Civitanova Marche (MC), località Fontespina. Di fronte al mare e non distante dal centro e dallo shopping.
+                            <p>Accogliente, inclusivo e familiare, la struttura è ideale per trascorrere soggiorni piacevoli e rilassanti. Con ogni comfort. Dispone di tre stanze (di cui una con accesso facilitato ai disabili):
+                            Carezza, Sorriso e Abbraccio</p>
+                            <p>A due passi dalla spiaggia, la struttura accoglie con calore persone di ogni provenienza, offrendo un'atmosfera serena e aperta dove sentirsi davvero a casa. Offre giornaliero, infatti, a tutti gli ospiti
+                                una ricca e golosa colazione all’italiana homemade viene servita nel grazioso portico esterno che è anche uno spazio comune a disposizione degli ospiti.</p>
+                            <p><em>Vi aspettiamo con cuore! ...Lory, Mattia e Antonio</em></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Row -->
+                <hr class="more_margin">
+                <div class="row mt-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="box_facilities no-border" data-cue="slideInUp">
+                            <i class="icon-hotel-parking"></i>
+                            <h3>Parcheggio semplice</h3>
+                            <p>Trovi sempre parcheggio vicinissimo alla nostra B&B</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="box_facilities no-border" data-cue="slideInUp">
+                            <i class="icon-hotel-disable"></i>
+                            <h3>Accessibile</h3>
+                            <p>Siamo focalizzati al 100% sui nostri ospiti diversamente abili</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="box_facilities no-border" data-cue="slideInUp">
+                            <i class="icon-hotel-dog"></i>
+                            <h3>Pet Friendly</h3>
+                            <p>Con preavviso, siamo felici di ricevere animali domestici</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="box_facilities no-border" data-cue="slideInUp">
+                            <i class="icon-hotel-patio"></i>
+                            <h3>Giadino e zone comune</h3>
+                            <p>A disposizione degli ospiti in qualunque momento</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Row -->
+            </div>
+        </div>
+        <!-- /About  -->
+
+         <div class="parallax_section_1 jarallax" data-jarallax data-speed="0.2">
+            <img class="jarallax-img kenburns-2" src="/img/benvenuti-a-La-Finestra-Blue-Marche-Civitanova.webp" alt="Una sala accogliente, con divano e letto nella struttura La Finestra Blu a Civitanova, Marche, Italia">
+            <div class="wrapper opacity-mask d-flex align-items-center justify-content-center text-center" data-opacity-mask="rgba(0, 0, 0, 0.5)">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="title white">
+                                <small class="mb-1">Testimonianze</small>
+                                <h2>Cosa dicono i nostri clienti</h2>
+                            </div>
+                            <div class="carousel_testimonials owl-carousel owl-theme nav-dots-orizontal">
+                                <div>
+                                    <div class="box_overlay">
+                                        <div class="pic">
+                                            <figure><img src="img/pol.webp" alt="User profile picture" class="img-circle">
+                                            </figure>
+                                        </div>
+                                        <div class="comment">
+                                            "Siamo stati due volta in questo B&B, gestori accoglienti e disponibili. Camere spaziose e pulitissime. comodo l'accesso con codice personale e tessera per le camere. Smart Tv, connessione wi fi, depuratore di acqua a disposizione. Bravi!" - <strong>Pol</strong>
+                                        </div>
+                                        <a href="https://www.google.com/maps/contrib/103204489943910903645/place/ChIJT--H14pzMhMRJC2GNSprUFs/@43.3200807,13.7099915,14.55z/data=!4m6!1m5!8m4!1e1!2s103204489943910903645!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank"><small>Vedi su Google</small></a>
+
+                                    </div>
+                                    <!-- End box_overlay -->
+                                </div>
+                                <div>
+                                    <div class="box_overlay">
+                                        <div class="pic">
+                                            <figure><img src="img/paolo.webp" alt="User profile picture" class="img-circle">
+                                            </figure>
+
+                                        </div>
+                                        <div class="comment">
+                                            "Antonio Loredana e Mattia sono degli host meravigliosi. La struttura è nuova e curata, ogni camera ha aria condizionata e finestre insonorizzate. Ci siamo sentiti a casa fin da subito. La posizione è strategica per chi viaggia e vuole fare una sosta, la spiaggia è a due passi! consigliatissimo, ah anche Jessy è meravigliosa" - <strong>Paolo</strong>
+                                        </div>
+                                        <a href="https://www.google.com/maps/contrib/117139541306136009647/reviews/@43.2684326,13.7278164,10.52z/data=!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank"><small>Vedi su Google</small></a>
+
+                                    </div>
+                                    <!-- End box_overlay -->
+                                </div>
+                                <div>
+                                    <div class="box_overlay">
+                                        <div class="pic">
+                                            <figure>
+                                                <img src="img/melissa.webp" alt="User profile picture" class="img-circle">
+                                            </figure>
+
+
+                                        </div>
+                                        <div class="comment">
+                                            "Esperienza da rifare sicuramente. Ambiente accogliente e pulito. Ottimo servizio!" - <strong>Melissa</strong>
+                                        </div>
+                                        <a href="https://www.google.com/maps/contrib/106343892854811725200/place/ChIJT--H14pzMhMRJC2GNSprUFs/@43.0635069,13.6325652,8.12z/data=!4m6!1m5!8m4!1e1!2s106343892854811725200!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank"><small>Vedi su Google</small></a>
+
+                                    </div>
+                                    <!-- End box_overlay -->
+                                </div>
+                            </div>
+                            <a style="color:white;" href="https://www.google.com/search?sca_esv=8c170d3ea24289b3&hl=en-GB&authuser=0&q=La+Finestra+Blu+B%26B&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E0ZWMwA43XM8MIF5gqVNS8nxYKwvW6-EB2NdWUv0MYOC9g-lGWUc4GYzgaFHyj-9FxAyvyk%3D&uds=AOm0WdHmOFDPI7FIyNbJw6Zwd9kSWmLCrxZCtR2RFyQKTptLYGhWZMWfXf7dNzEkkbMfzz9caCOsx2-4ItiPEnQqNVjYXfBW5LHQ_DO9GGJKI2cTkmzXl3w&sa=X&ved=2ahUKEwjS4LWwmcmOAxXb_rsIHXz-DuQQ3PALegQIFxAE&biw=1920&bih=993" target="_blank">Trovaci su Google per leggere tutti i review</a>
+
+                            <!-- End carousel_testimonials -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /parallax_section_1-->
+
+        <div class="container margin_120_95" id="rooms">
+            <div class="title mb-4">
+                <small data-cue="slideInUp">Dettagli che coccolano</small>
+                <h2 data-cue="slideInUp" data-delay="200">Le nostre sale</h2>
+                <p class="lead" style="font-family: 'Caveat', cursive;font-size:2rem;margin-bottom:0;">Ogni buongiorno è un semplice pensiero, caldo come un abbraccio,
+                    dolce come una carezza, luminoso come un sorriso.</p> - <span><em>Anonima</em></span>
+            </div>
+            <div class="row_list_version_2" data-cue="slideInUp" data-delay="300">
+                <div class="row g-0 align-items-center">
+                    <div class="col-xl-8">
+                        <div class="owl-carousel owl-theme carousel_item_1 kenburns rounded-img">
+                            <div class="item">
+                                <a data-fslightbox="rooms_1" data-type="image" href="img/rooms/carezza/carezza1.webp"><img src="img/rooms/carezza/carezza1.webp" alt=""></a>
+                            </div>
+                            <div class="item">
+                                <a data-fslightbox="rooms_1" data-type="image" href="img/rooms/carezza/carezza2.webp"><img src="img/rooms/carezza/carezza2.webp" alt=""></a>
+                            </div>
+                            <div class="item">
+                                <a data-fslightbox="rooms_1" data-type="image" href="img/rooms/carezza/carezza3.webp"><img src="img/rooms/carezza/carezza3.webp" alt=""></a>
+                            </div>
+                            <div class="item">
+                                <a data-fslightbox="rooms_1" data-type="image" href="img/rooms/carezza/carezza4.webp"><img src="img/rooms/carezza/carezza4.webp" alt=""></a>
+                            </div>
+                            <div class="item">
+                                <a data-fslightbox="rooms_1" data-type="image" href="img/rooms/carezza/carezza7.webp"><img src="img/rooms/carezza/carezza7.webp" alt=""></a>
+                            </div>
+                            <div class="item">
+                                <a data-fslightbox="rooms_1" data-type="image" href="img/rooms/carezza/carezza6.webp"><img src="img/rooms/carezza/carezza6.webp" alt=""></a>
+                            </div>
+                        </div>
+                        <!-- /carousel -->
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="box_item_info" data-jarallax-element="-25">
+                            <small>La carezza non ha voce me è bello sentirsela dire</small>
+                            <h2>La camera Carezza</h2>
+                            <p>Stanza luminosa e accogliente, ideale per rilassarsi e sentirsi subito come a casa.</p>
+                            <div class="facilities clearfix">
+                                <ul>
+                                    <li>
+                                        <i class="customicon-double-bed"></i> Letto matrimoniale e un letto poltrona
+                                    </li>
+                                    <li>
+                                        <i class="customicon-3-guests"></i> Fino a tre ospiti
+                                    </li>
+                                    <li>
+                                        <i class="customicon-television"></i> 32" TV
+                                    </li>
+                                    <li>
+                                        <i class="customicon-air-condition"></i> aria condizionata
+                                    </li>
+                                    <li>
+                                        <i class="customicon-bath-tub"></i> bagno privato con doccia
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /box_item_info -->
+                    </div>
+                    <!-- /col -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /row_list -->
+            <div class="row_list_version_2 inverted" data-cue="slideInUp">
+                <div class="row g-0 align-items-center">
+                    <div class="col-xl-8 order-xl-2">
+                        <div class="owl-carousel owl-theme carousel_item_1 kenburns rounded-img">
+                            <div class="item">
+                                <a data-fslightbox="rooms_1" data-type="image" href="img/rooms/abbraccio/abbraccio1.webp"><img src="img/rooms/abbraccio/abbraccio1.webp" alt=""></a>
+                            </div>
+                            <div class="item">
+                                <a data-fslightbox="rooms_1" data-type="image" href="img/rooms/abbraccio/abbraccio2.webp"><img src="img/rooms/abbraccio/abbraccio2.webp" alt=""></a>
+                            </div>
+                            <div class="item">
+                                <a data-fslightbox="rooms_1" data-type="image" href="img/rooms/abbraccio/abbraccio3.webp"><img src="img/rooms/abbraccio/abbraccio3.webp" alt=""></a>
+                            </div>
+                            <div class="item">
+                                <a data-fslightbox="rooms_1" data-type="image" href="img/rooms/abbraccio/abbraccio4.webp"><img src="img/rooms/abbraccio/abbraccio4.webp" alt=""></a>
+                            </div>
+                            <div class="item">
+                                <a data-fslightbox="rooms_1" data-type="image" href="img/rooms/abbraccio/abbraccio5.webp"><img src="img/rooms/abbraccio/abbraccio5.webp" alt=""></a>
+                            </div>
+                            <div class="item">
+                                <a data-fslightbox="rooms_1" data-type="image" href="img/rooms/abbraccio/abbraccio6.webp"><img src="img/rooms/abbraccio/abbraccio6.webp" alt=""></a>
+                            </div>
+                        </div>
+                        <!-- /carousel -->
+                    </div>
+                    <div class="col-xl-4 order-xl-1">
+                        <div class="box_item_info" data-jarallax-element="-25">
+                            <small>L'abbraccio: un posto perfetto in cui abitare</small>
+                            <h2>La camera Abbraccio</h2>
+                            <p>Ampia, confortevole e accogliente: pensata per offrire a tutti un soggiorno senza barriere.</p>
+                            <div class="facilities clearfix">
+                                <ul>
+                                    <li>
+                                        <i class="customicon-double-bed"></i> Letto matrimoniale e un divano letto matrimoniale
+                                    </li>
+                                    <li>
+                                        <i class="customicon-4-guests"></i> Fino a 4 ospiti
+                                    </li>
+                                    <li>
+                                        <i class="customicon-television"></i> 32" TV
+                                    </li>
+                                    <li>
+                                        <i class="customicon-air-condition"></i> aria condizionata
+                                    </li>
+                                    <li>
+                                        <i class="customicon-bath-tub"></i> bagno privato con doccia
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /box_item_info -->
+                    </div>
+                    <!-- /col -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /row_list -->
+            <div class="row_list_version_2" data-cue="slideInUp">
+                <div class="row g-0 align-items-center">
+                    <div class="col-xl-8">
+                        <div class="owl-carousel owl-theme carousel_item_1 kenburns rounded-img">
+                            <div class="item">
+                                <a data-fslightbox="rooms_1" data-type="image" href="img/rooms/sorriso/sorriso1.webp"><img src="img/rooms/sorriso/sorriso1.webp" alt=""></a>
+                            </div>
+                            <div class="item">
+                                <a data-fslightbox="rooms_1" data-type="image" href="img/rooms/sorriso/sorriso2.webp"><img src="img/rooms/sorriso/sorriso2.webp" alt=""></a>
+                            </div>
+                            <div class="item">
+                                <a data-fslightbox="rooms_1" data-type="image" href="img/rooms/sorriso/sorriso3.webp"><img src="img/rooms/sorriso/sorriso3.webp" alt=""></a>
+                            </div>
+                            <div class="item">
+                                <a data-fslightbox="rooms_1" data-type="image" href="img/rooms/sorriso/sorriso4.webp"><img src="img/rooms/sorriso/sorriso4.webp" alt=""></a>
+                            </div>
+                            <div class="item">
+                                <a data-fslightbox="rooms_1" data-type="image" href="img/rooms/sorriso/sorriso5.webp"><img src="img/rooms/sorriso/sorriso5.webp" alt=""></a>
+                            </div>
+                            <div class="item">
+                                <a data-fslightbox="rooms_1" data-type="image" href="img/rooms/sorriso/sorriso6.webp"><img src="img/rooms/sorriso/sorriso6.webp" alt=""></a>
+                            </div>
+                        </div>
+                        <!-- /carousel -->
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="box_item_info" data-jarallax-element="-25">
+                            <small>Il sorriso illumina il cuore e scalda l'anima</small>
+                            <h2>La camera Sorriso</h2>
+                            <p>Intima e luminosa, perfetta per iniziare ogni giornata con leggerezza e buonumore.</p>
+                            <div class="facilities clearfix">
+                                <ul>
+                                    <li>
+                                        <i class="customicon-double-bed"></i> Letto matrimoniale e un divano letto matrimoniale
+                                    </li>
+                                    <li>
+                                        <i class="customicon-4-guests"></i> Fino a 4 ospiti
+                                    </li>
+                                    <li>
+                                        <i class="icon-spa-disable"></i> Accesso facilitato per i ospiti disabili
+                                    </li>
+                                    <li>
+                                        <i class="customicon-television"></i> 32" TV
+                                    </li>
+                                    <li>
+                                        <i class="customicon-air-condition"></i> aria condizionata
+                                    </li>
+                                    <li>
+                                        <i class="customicon-bath-tub"></i> bagno privato con doccia
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /box_item_info -->
+                    </div>
+                    <!-- /col -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /row_list -->
+            <div class="title text-center mb-5">
+                <small data-cue="slideInUp">Coccoliamo tutti a La Finestra Blu B&B</small>
+                <h2 data-cue="slideInUp" data-delay="100">Tutti gli ospiti hanno</h2>
+            </div>
+            <div class="row mt-4">
+                <div class="col-xl-3 col-md-6">
+                    <div class="box_facilities no-border" data-cue="slideInUp">
+                        <i class="customicon-bath-tub"></i>
+                        <h3>Bagno privato</h3>
+                        <p>Compreso kit da bagno completo con asciugamani, prodotti essenziali e asciugacapelli in ogni stanza.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="box_facilities" data-cue="slideInUp">
+                        <i class="customicon-wifi"></i>
+                        <h3>Wifi gratuito</h3>
+                        <p>Wi-Fi gratuito disponibile in tutte le stanze e nelle aree comuni.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="box_facilities" data-cue="slideInUp">
+                        <i class="icon-hotel-restaurant"></i>
+                        <h3>Cucina a disposizione</h3>
+                        <p>Accesso alla cucina attrezzata per sentirsi davvero a casa, su soggiorni di almeno 3 notti.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="box_facilities" data-cue="slideInUp">
+                        <i class="customicon-breakfast"></i>
+                        <h3>Colazione inclusa</h3>
+                        <p>Dolci, frutta fresca e bevande calde: colazione all’italiana servita con cura e sorrisi.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /row -->
+            <div class="row mt-4">
+                <div class="col-xl-3 col-md-6">
+                    <div class="box_facilities no-border" data-cue="slideInUp">
+                        <i class="icon-hotel-swimming_pool"></i>
+                        <h3>Spiaggia a 2 minuti</h3>
+                        <p>Il mare è dietro l’angolo: basta uscire e sentire la sabbia sotto i piedi..
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="box_facilities" data-cue="slideInUp">
+                        <i class="icon-hotel-patio"></i>
+                        <h3>Aree comuni</h3>
+                        <p>Zona giorno e giardino disponibili per tutti gli ospiti, in ogni momento della giornata.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="box_facilities" data-cue="slideInUp">
+                        <i class="customicon-washing-machine"></i>
+                        <h3>Ordine e benessere</h3>
+                        <p>Servizio di pulizia settimanale, con flessibilità su richiesta per soggiorni più lunghi.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="box_facilities" data-cue="slideInUp">
+                        <i class="icon-spa-tisane"></i>
+                        <h3>Accoglienza con sorriso</h3>
+                        <p>Accoglienza semplice e calorosa con bevanda calda e cura autentica per ogni ospite.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /Row -->
+        </div>
+        <!-- /container-->
+
+        <div class="marquee">
+            <div class="track">
+                <div class="content">La Finestra Blu ti aspetta!&nbspLa Finestra Blu ti aspetta!&nbspLa Finestra Blu ti aspetta!&nbspLa Finestra Blu ti aspetta!&nbspLa Finestra Blu ti aspetta!&nbspLa Finestra Blu ti aspetta!&nbspLa Finestra Blu ti aspetta!&nbspLa Finestra Blu ti aspetta!&nbspLa Finestra Blu ti aspetta!&nbsp</div>
+            </div>
+        </div>
+        <!-- /marquee-->
+
+        <div class="bg_white">
+            <div class="pinned-image pinned-image--medium">
+                <div class="pinned-image__container" id="section_video">
+                    <img class="img-fluid" src="/img/background-bedroom-la-finestra-blu.webp" alt="Background image showing one of the available bedrooms at La Finestra Blu &B">
+                    <div class="pinned-image__container-overlay"></div>
+                </div>
+                <div class="pinned_over_content">
+                    <div class="title white">
+                        <small data-cue="slideInUp" data-delay="200">La Finestra Blu B&B</small>
+                        <h2 data-cue="slideInUp" data-delay="300">Un luogo dove rilassarti, respirare bellezza e lasciarti coccolare ogni giorno.</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- /pinned content -->
+        </div>
+        <!-- /bg_white-->
+
+        <div class="container margin_120" id="gallery">
+            <div class="row">
+                <div class="title col-12 text-center mb-5">
+                    <small data-cue="slideInUp">Vedi cosa ti aspetta</small>
+                    <h2 data-cue="slideInUp" data-delay="100">Le nostre foto</h2>
+                </div>
+            </div>
+            <div data-cues="zoomIn">
+                <div class="owl-carousel owl-theme carousel_item_centered kenburns rounded-img">
+                    <div class="item">
+                        <img src="img/gallery/bathroom-finestra-blu-bnb.webp" alt="Uno dei bagni della finestra blu">
+                    </div>
+                    <div class="item">
+                        <img src="img/gallery/spiaggia-la-finestra-blu-3.webp" alt="La spiaggia Aloha,, Marche, che si trova a 2 minuti da La Finestra Blu ">
+                    </div>
+                    <div class="item">
+                        <img src="img/gallery/bedroom6-finestra-blu.webp" alt="Una camera da letto a La Finestra Blu">
+                    </div>
+                    <div class="item">
+                        <img src="img/gallery/common-room.webp" alt="La nostra sala comune a La Finestra Blu">
+                    </div>
+                    <div class="item">
+                        <img src="img/gallery/dining-finestra-blu.webp" alt="La sala comune pensata anche per fare colazione a La Finestra Blu">
+                    </div>
+                    <div class="item">
+                        <img src="img/gallery/spiaggia.webp" alt="La spiaggia vicino a La Finestra Blu">
+                    </div>
+                    <div class="item">
+                        <img src="img/gallery/welcome.webp" alt="Una nostra sala a La Finestra Blu">
+                    </div>
+                    <div class="item">
+                        <img src="img/gallery/shower-finestra-blu-bnb.webp" alt="Un bagno completo con box showers a La Finestra Blu">
+                    </div>
+                    <div class="item">
+                        <img src="img/gallery/breakfast-at-la-finestra-blu.webp" alt="La colazione offerta da La Finestra Blu">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                 <a data-fslightbox="gallery_1" data-type="image" href="img/gallery/bathroom-finestra-blu-bnb.webp"" class="btn_1 outline">
+                    Fotogalleria full-screen
+                </a>
+                <a data-fslightbox="gallery_1" data-type="image" href="img/gallery/spiaggia-la-finestra-blu-3.webp"></a>
+                <a data-fslightbox="gallery_1" data-type="image" href="img/gallery/bedroom6-finestra-blu.webp"></a>
+                <a data-fslightbox="gallery_1" data-type="image" href="img/gallery/common-room.webp"></a>
+                <a data-fslightbox="gallery_1" data-type="image" href="img/gallery/dining-finestra-blu.webp"></a>
+                <a data-fslightbox="gallery_1" data-type="image" href="img/gallery/spiaggia.webp"></a>
+                <a data-fslightbox="gallery_1" data-type="image" href="img/gallery/welcome.webp"></a>
+                <a data-fslightbox="gallery_1" data-type="image" href="img/gallery/shower-finestra-blu-bnb.webp"></a>
+                <a data-fslightbox="gallery_1" data-type="image" href="img/gallery/breakfast-at-la-finestra-blu.webp"></a>
+            </div>
+        </div>
+        <!-- /container gallery-->
+
+        <!-- /bg_white -->
+
+       <div class="container-fluid" style="padding:120px 12px; background:white;" id="contacts">
+            <div class="row justify-content-between container" style="margin:0 auto;max-width: 1320px;">
+                <div class="col-xl-4">
+                    <div data-cue="slideInUp">
+                        <div class="title">
+                            <small>La Finestra Blu B&B</small>
+                            <h2>Vieni a trovarci!</h2>
+                        </div>
+                        <p>Via Corbizi 2/A, Civitanova<br>Marche, Italia</p>
+                        <div class="phone_element no_borders"><a href="tel:+393472560943"><i class="bi bi-telephone"></i><span><em>Antonio</em>+39 347 25 60 943</span></a></div>
+                        <div class="phone_element no_borders"><a href="tel:+393496727828"><i class="bi bi-telephone"></i><span><em>Loredana</em>+39 349 672 78284</span></a></div>
+                        <div class="phone_element no_borders"><a href="mailto:info@lafinestrablu.com"><i class="bi bi-envelope"></i><span><em>Email</em>info@lafinestrablu.com</span></a></div>
+                        <div class="phone_element no_borders"><a href="https://maps.app.goo.gl/a7jfRrQQ3kAskCnH6"><i class="bi bi-map"></i><span><em>Trovaci su</em>Google Maps</span></a></div>
+                    </div>
+                </div>
+                <div class="col-xl-7" id="image-section">
+                    <img src="img/bedroom-1-finestra-blu.webp" style="border-radius:6px;width:100%;height:auto;" alt="Un camera da letto a La Finestra Blu B&B">
+                </div>
+
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+
+    </main>
+
+    <div class="map_contact">
+        <a href="https://maps.app.goo.gl/a7jfRrQQ3kAskCnH6" target="_blank">
+            <img style="width:100%;height:500px;object-fit:cover;" src="/img/la-finestra-blu-marche-location.webp" alt="Map showing the location of La Finestra Blu" class="img-fluid">
         </a>
-
-        <!-- Toggler button for mobile -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0 nav-wrap">
-                <li class="nav-item"><a class="nav-link" href="#navbar">Benvenuti</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#rooms">Camere</a></li>
-                <li class="nav-item"><a class="nav-link" href="#main-gallery-wrap">Galleria</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
-            </ul>
-
-            <div class="d-flex align-items-center gap-2">
-                <select id="languageSelectNav" class="form-select form-select-sm" aria-label="Select language">
-                    <option value="en" selected>EN</option>
-                    <option value="it">IT</option>
-                </select>
-                <button id="themeToggle" class="btn btn-outline-secondary btn-sm" aria-label="Toggle light/dark mode">
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-moon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z"/>
-                    </svg>
-                </button>
-            </div>
+    </div>
+    <!--/map_contact -->
+    <div class="copy">
+        <div class="container">
+            © La Finestra Blu - Sito fatto con &#9825; da <a style="color:#53a3d3 !important;" href="https://mattbedford.com" target="_blank">Matt Bedford</a>
         </div>
     </div>
-</nav>
-<!-- Hero Section -->
-<section class="hero" role="region" aria-label="Welcome section">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 140" class="wave-nav">
-        <path fill="000" fill-opacity="1" d="M0,96L60,85.3C120,75,240,53,360,42.7C480,32,600,32,720,42.7C840,53,960,75,1080,90.7C1200,107,1320,117,1380,122.7L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
-    </svg>
-    <div class="container">
-        <h1 class="display-4">Benvenuti a La Finestra Blu B&B</h1>
-        <p class="lead">Un rifugio tranquillo e inclusivo immerso nella natura</p>
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 290" class="wave-mission">
-        <path fill-opacity="1" d="M0,96L60,101.3C120,107,240,117,360,106.7C480,96,600,64,720,64C840,64,960,96,1080,96C1200,96,1320,64,1380,48L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
-    </svg>
-</section>
+    <!--/copyright line -->
 
-<!-- Mission Statement -->
-<section class="text-center py-5 mission" role="region" aria-label="Our mission" id="about">
+    <!-- COMMON SCRIPTS -->
+    <script src="js/common_scripts.js"></script>
+    <script src="js/common_functions.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
 
-    <div class="container mission-texts">
-        <h2>ACCOGLIENZA, OSPITALITÀ E CONFORT A DUE PASSI DAL MARE...</h2>
-        <p>La Finestra Blu è un nuovo bed and breakfast recentemente ristrutturato che si trova a pochi passi dal mare a Civitanova Marche (MC), località Fontespina. Alla Finestra Blu comodità, ospitalità ed inclusione si fondono in armonia per offrire soggiorni piacevoli e rilassanti in un ambiente familiare e molto accogliente.</p>
-        <p>A due passi dalla spiaggia, la struttura accoglie con calore persone di ogni provenienza, offrendo un'atmosfera serena e aperta dove sentirsi davvero a casa. Offre giornaliero, infatti, a tutti gli ospiti una ricca e golosa colazione all’italiana home made viene servita nel grazioso portico esterno che è anche uno spazio comune a disposizione degli ospiti.</p>
-    </div>
-</section>
+    <!-- SPECIFIC SCRIPTS -->
+    <script src="js/slider.js"></script>
 
-<!-- Rooms Section -->
-<!-- Room 1 -->
-<div id="rooms" class="row mb-5 mt-5 align-items-center container room-wrap">
-    <div class="col-md-6">
-        <h3>La Sala Carezza</h3>
-        <h4>La carezza non ha voce me è bello sentirsela dire</h4>
-        <p>A cozy room with warm tones and a garden view.</p>
-        <ul>
-            <li>Letto Queen-size</li>
-            <li>bagno privato con doccia, asciugamani e kit di pulizia</li>
-            <li>Garden access</li>
-           <li>aria condizionata</li>
-            <li>TV in camera</li>
-            <li>Wi-Fi</li>
-            <li>due minuti dalla spiaggia a piedi</li>
-        </ul>
-    </div>
-    <div class="col-md-6 room-photos">
-        <div id="swiper-stroke" class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="assets/img/prova1.jpeg" alt="La Sala Carezza - View 1" class="img-fluid rounded"></div>
-                <div class="swiper-slide"><img src="assets/img/prova2.jpeg" alt="La Sala Carezza - View 2" class="img-fluid rounded"></div>
-                <div class="swiper-slide"><img src="assets/img/prova3.jpeg" alt="La Sala Carezza - View 3" class="img-fluid rounded"></div>
-                <div class="swiper-slide"><img src="assets/img/prova4.jpeg" alt="La Sala Carezza - View 4" class="img-fluid rounded"></div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-        <div thumbsSlider="" id="swiper-stroke-thumbs" class="swiper thumbnails">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="assets/img/prova1.jpeg" alt="La Sala Carezza - View 1" class="img-fluid rounded"></div>
-                <div class="swiper-slide"><img src="assets/img/prova2.jpeg" alt="La Sala Carezza - View 2" class="img-fluid rounded"></div>
-                <div class="swiper-slide"><img src="assets/img/prova3.jpeg" alt="La Sala Carezza - View 3" class="img-fluid rounded"></div>
-                <div class="swiper-slide"><img src="assets/img/prova4.jpeg" alt="La Sala Carezza - View 4" class="img-fluid rounded"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Room 2 -->
-<div class="row mb-5 align-items-center flex-md-row-reverse container room-wrap">
-    <div class="col-md-6">
-        <h3>La sala Abbraccio</h3>
-        <h4>L'abbraccio: un posto perfetto in cui abitare</h4>
-        <p>Soft lighting and pastel tones make this room a relaxing La Finestra Blu.</p>
-        <ul>
-            <li>Letto Queen-size</li>
-            <li>bagno privato con doccia, asciugamani e kit di pulizia</li>
-            <li>Garden access</li>
-            <li>aria condizionata</li>
-            <li>TV in camera</li>
-            <li>Wi-Fi</li>
-            <li>due minuti dalla spiaggia a piedi</li>
-        </ul>
-    </div>
-    <div class="col-md-6 room-photos">
-        <div id="swiper-hug" class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="assets/img/prova2.jpeg" alt="La sala Abbraccio - View 1" class="img-fluid rounded"></div>
-                <div class="swiper-slide"><img src="assets/img/prova3.jpeg" alt="La sala Abbraccio - View 2" class="img-fluid rounded"></div>
-                <div class="swiper-slide"><img src="assets/img/prova5.jpeg" alt="La sala Abbraccio - View 3" class="img-fluid rounded"></div>
-                <div class="swiper-slide"><img src="assets/img/prova7.jpeg" alt="La sala Abbraccio - View 4" class="img-fluid rounded"></div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-        <div thumbsSlider="" id="swiper-hug-thumbs" class="swiper thumbnails">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="assets/img/prova2.jpeg" alt="La sala Abbraccio - View 1" class="img-fluid rounded"></div>
-                <div class="swiper-slide"><img src="assets/img/prova3.jpeg" alt="La sala Abbraccio - View 2" class="img-fluid rounded"></div>
-                <div class="swiper-slide"><img src="assets/img/prova5.jpeg" alt="La sala Abbraccio - View 3" class="img-fluid rounded"></div>
-                <div class="swiper-slide"><img src="assets/img/prova7.jpeg" alt="La sala Abbraccio - View 4" class="img-fluid rounded"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Room 3 -->
-<div class="row mb-5 align-items-center container room-wrap">
-    <div class="col-md-6">
-        <h3>La Sala Sorriso</h3>
-        <h4>Il sorriso illumina il cuore e scalda l'anima</h4>
-        <p>Spacious and bright, ideal for families or longer stays.</p>
-        <ul>
-            <li>Letto Queen-size</li>
-            <li>bagno privato con doccia, asciugamani e kit di pulizia</li>
-            <li>Garden access</li>
-            <li>aria condizionata</li>
-            <li>TV in camera</li>
-            <li>Wi-Fi</li>
-            <li>due minuti dalla spiaggia a piedi</li>
-        </ul>
-    </div>
-    <div class="col-md-6 room-photos ">
-        <div id="swiper-smile" class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="assets/img/prova3.jpeg" alt="La Sala Sorriso - View 1" class="img-fluid rounded"></div>
-                <div class="swiper-slide"><img src="assets/img/prova6.jpeg" alt="La Sala Sorriso - View 2" class="img-fluid rounded"></div>
-                <div class="swiper-slide"><img src="assets/img/prova4.jpeg" alt="La Sala Sorriso - View 3" class="img-fluid rounded"></div>
-                <div class="swiper-slide"><img src="assets/img/prova1.jpeg" alt="La Sala Sorriso - View 4" class="img-fluid rounded"></div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-        <div thumbsSlider="" id="swiper-smile-thumbs" class="swiper thumbnails">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="assets/img/prova3.jpeg" alt="La Sala Sorriso - View 1" class="img-fluid rounded"></div>
-                <div class="swiper-slide"><img src="assets/img/prova6.jpeg" alt="La Sala Sorriso - View 2" class="img-fluid rounded"></div>
-                <div class="swiper-slide"><img src="assets/img/prova4.jpeg" alt="La Sala Sorriso - View 3" class="img-fluid rounded"></div>
-                <div class="swiper-slide"><img src="assets/img/prova1.jpeg" alt="La Sala Sorriso - View 4" class="img-fluid rounded"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- More about text -->
-<section class="text-center py-5" role="region" aria-label="Our mission">
-    <div class="container">
-        <h2 class="mb-4 text-center">About Us</h2>
-        <p class="fs-5">Alla Finestra Blu comodità, ospitalità ed inclusione si fondono in armonia per offrire soggiorni piacevoli e rilassanti in un ambiente familiare e molto accogliente. Loredana, Mattia e Antonio vi attendono presto.</p>
-    </div>
-</section>
-
-<!-- Gallery Section -->
-<section id="main-gallery-wrap" class="text-center py-5 container" role="region" aria-label="main photo gallery">
-    <div id="swiper-gallery" class="swiper container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="assets/img/gallery1.jpg" alt="Breakfast on the terrace" class="img-fluid rounded"></div>
-            <div class="swiper-slide"><img src="assets/img/gallery2.jpg" alt="Path to the garden" class="img-fluid rounded"></div>
-            <div class="swiper-slide"><img src="assets/img/gallery3.jpg" alt="Guest lounge area" class="img-fluid rounded"></div>
-            <div class="swiper-slide"><img src="assets/img/gallery4.jpg" alt="Evening lights around the property" class="img-fluid rounded"></div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    </div>
-    <div thumbsSlider="" id="swiper-gallery-thumbs" class="swiper thumbnails">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="assets/img/gallery1.jpg" alt="Breakfast on the terrace" class="img-fluid rounded"></div>
-            <div class="swiper-slide"><img src="assets/img/gallery2.jpg" alt="Path to the garden" class="img-fluid rounded"></div>
-            <div class="swiper-slide"><img src="assets/img/gallery3.jpg" alt="Guest lounge area" class="img-fluid rounded"></div>
-            <div class="swiper-slide"><img src="assets/img/gallery4.jpg" alt="Evening lights around the property" class="img-fluid rounded"></div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<div class="wave-pre-contact">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 290">
-        <path fill-opacity="1" d="M0,96L60,101.3C120,107,240,117,360,106.7C480,96,600,64,720,64C840,64,960,96,1080,96C1200,96,1320,64,1380,48L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
-    </svg>
-</div>
-<section id="contatti" class="contact-section" role="region" aria-label="Contact us">
-    <div class="container">
-        <h2 class="mb-4 text-center">Contattaci</h2>
-        <div class="row align-items-center">
-            <div class="col-md-6 contacts-texts">
-                <p><strong>Address:</strong><br />Via Corbizi 2/A, Civitanova - Marche, Italia</p>
-                <p><strong>Tel</strong><br /><a href="tel:+393472560943">+39 347 256 0943</a> / <a href="tel:+393496727828">+39 349 672 7828</a></p>
-                <p><strong>Email:</strong><br /><a href="mailto:info@La Finestra Blubnb.com">info@lafinestrablu.com</a></p>
-            </div>
-            <div class="col-md-6">
-                <img src="assets/img/lafinestrablu-location.webp" alt="Map showing location of La Finestra Blu B&B" class="img-fluid rounded">
-            </div>
-        </div>
-        <div class="text-center mt-4">
-            <label for="languageSelectFooter" class="form-label">Language:</label>
-            <select id="languageSelectFooter" class="form-select d-inline-block w-auto" aria-label="Select language">
-                <option value="en" selected>EN</option>
-                <option value="it">IT</option>
-            </select>
-        </div>
-    </div>
-</section>
-
-<button id="backToTop" class="btn position-fixed" style="bottom: 1.5rem; right: 1.5rem; opacity:0;" aria-label="Back to top">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="m352 296-96-96-96 96"/>
-        <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 64C150 64 64 150 64 256s86 192 192 192 192-86 192-192S362 64 256 64z"/>
-    </svg>
-</button>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="assets/js/swiper-init.js"></script>
-<script src="assets/js/language-switcher.js"></script>
-<script src="assets/js/theme-toggle.js"></script>
-<script src="assets/js/back-to-top.js"></script>
 </body>
 </html>

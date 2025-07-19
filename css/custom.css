@@ -1,0 +1,32 @@
+/*============================================================================================*/
+/* Your custom styles below */
+/*============================================================================================*/
+
+
+
+
+.carousel_testimonials .pic::after {
+    display:block;
+    position:relative;
+    content:"\02605 \02605 \02605 \02605 \02605";
+    color:white;
+    z-index:10;
+    width:100%;
+    left:0;
+    top:0;
+    height:40px;
+    font-size:30px;
+}
+.carousel_testimonials .comment {
+    min-height:200px;
+}
+.carousel_testimonials a {
+    color:white;
+}
+
+.owl-carousel .item img {
+    aspect-ratio: 16/9;
+    width:1000px;
+    height:680px;
+    object-fit:cover;
+}
