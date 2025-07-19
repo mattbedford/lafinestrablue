@@ -1,8 +1,7 @@
 /*
 Theme Name: Bed and Breakfast
-Theme URI: http://www.ansonika.com/bed-and-breakfast/
-Author: Ansonika
-Author URI: http://themeforest.net/user/Ansonika/
+Author: Matt Bedford
+Author URI: https://mattbedford.com
 
 [Table of contents] 
 
@@ -253,7 +252,7 @@ hr.more_margin {
 
 /* General links color */
 a {
-  color: #978667;
+  color: #53a3d3;
   text-decoration: none;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -270,7 +269,7 @@ a:hover, a:focus {
 
 .title small {
   text-transform: uppercase;
-  color: #978667;
+  color: #53a3d3;
   letter-spacing: 3px;
   font-weight: 600;
   display: block;
@@ -293,7 +292,7 @@ a:hover, a:focus {
   text-align: center;
 }
 .title.white small {
-  color: #ebd7b2;
+  color: #53a3d3;
   opacity: 0.8;
 }
 .title.white h2,
@@ -361,7 +360,7 @@ a.btn_1,
 .btn_1 {
   border: none;
   color: #fff;
-  background: #978667;
+  background: #53a3d3;
   outline: none;
   cursor: pointer;
   display: inline-flex;
@@ -636,7 +635,7 @@ header.fixed_header.sticky .hamburger__inner::after {
   font-size: 18px;
   font-size: 1.125rem;
   font-weight: 600;
-  color: #978667;
+  color: #53a3d3;
 }
 .phone_element a span em {
   color: #333;
@@ -652,7 +651,7 @@ header.fixed_header.sticky .hamburger__inner::after {
   margin-right: 15px;
   font-size: 30px;
   font-size: 1.875rem;
-  color: #978667;
+  color: #53a3d3;
 }
 .phone_element.no_borders {
   padding-top: 5px;
@@ -765,7 +764,7 @@ header.fixed_header.sticky .hamburger__inner::after {
     display: none !important;
   }
   .main-menu #mainNav ul li a:hover, .main-menu #mainNav ul li a.active {
-    color: #978667 !important;
+    color: #53a3d3 !important;
   }
   .main-menu #mainNav ul li a.btn_1 {
     background-color: transparent;
@@ -891,7 +890,7 @@ img.jarallax-img.kenburns-2 {
   letter-spacing: 3px;
   display: block;
   margin: 0 0 10px 0;
-  color: #ebd7b2;
+  color: #53a3d3;
   font-weight: 600;
 }
 .hero .wrapper h1,
@@ -970,7 +969,7 @@ img.jarallax-img.kenburns-2 {
   opacity: 0.7;
 }
 .social ul li a:hover {
-  color: #978667;
+  color: #53a3d3;
   opacity: 1;
 }
 .social ul li a i {
@@ -1190,7 +1189,7 @@ img.jarallax-img.kenburns-2 {
 }
 .slide-text small {
   text-transform: uppercase;
-  color: #ebd7b2;
+  color: #53a3d3;
   letter-spacing: 4px;
   font-weight: 600;
   display: block;
@@ -1363,7 +1362,7 @@ a.box_cat_rooms:hover .background-image {
 .box_facilities i {
   font-size: 62px;
   font-size: 3.875rem;
-  color: #978667;
+  color: #53a3d3;
 }
 .box_facilities h3 {
   font-size: 21px;
@@ -1385,7 +1384,7 @@ a.box_cat_rooms:hover .background-image {
   color: #fff;
 }
 .box_facilities.white i {
-  color: #ebd7b2;
+  color: #53a3d3;
 }
 @media (max-width: 767px) {
   .box_facilities.white {
@@ -1624,14 +1623,13 @@ a.box_cat_rooms:hover .background-image {
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
 }
 .box_item_info small {
-  text-transform: uppercase;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   display: block;
   margin-bottom: 0;
   font-size: 14px;
   font-size: 0.875rem;
-  color: #978667;
+  color: #53a3d3;
 }
 .box_item_info h2 {
   font-size: 30px;
@@ -1658,7 +1656,7 @@ a.box_cat_rooms:hover .background-image {
   height: 36px;
   font-size: 30px;
   font-size: 1.875rem;
-  color: #978667;
+  color: #53a3d3;
   margin-right: 15px;
 }
 @media (max-width: 767px) {
@@ -1789,7 +1787,7 @@ a.box_cat_rooms:hover .background-image {
   font-weight: 600;
 }
 .nav-tabs#customTab .nav-link:hover {
-  color: #978667;
+  color: #53a3d3;
 }
 .nav-tabs#customTab .nav-link.active {
   background-color: #89795d;
@@ -1964,7 +1962,7 @@ a.box_cat_rooms:hover .background-image {
   color: #333;
 }
 .list_ok ul li:before {
-  color: #978667;
+  color: #53a3d3;
   position: absolute;
   left: 0;
   top: -7px;
