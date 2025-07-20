@@ -52,4 +52,8 @@
         object-fit:cover;
         max-height:400px;
     }
+    .pinned-image h2 {
+        font-size:35px;
+    }
+
 }
