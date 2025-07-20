@@ -31,7 +31,7 @@
     object-fit:cover;
 }
 
-@media screen and (min-width:768px) and (max-width:1000px) {
+@media screen and (min-width:768px) and (max-width:1300px) {
     .parallax_section_1 {
         min-height:100vh;
     }
