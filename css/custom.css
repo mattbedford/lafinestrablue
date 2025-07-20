@@ -33,12 +33,16 @@
 
 @media screen and (max-width:767px) {
     .parallax_section_1 {
-        min-height:90vh;
+        min-height:100vh;
     }
     .comment {
         font-size:15px;
     }
-    .carousel_testimonials .pic img {
+    .carousel_testimonials .pic img,
+    .carousel_testimonials .pic figure {
         display:none;
+    }
+    .carousel_testimonials .box_overlay {
+        padding: 15px;
     }
 }
