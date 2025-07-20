@@ -52,7 +52,7 @@
         object-fit:cover;
         max-height:400px;
     }
-    .pinned-image h2 {
+    .pinned-image .pinned_over_content h2 {
         font-size:35px;
     }
 
