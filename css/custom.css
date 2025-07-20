@@ -39,7 +39,7 @@
 
 @media screen and (max-width:767px) {
     .parallax_section_1 {
-        min-height:100vh;
+        min-height:110vh;
     }
     .comment {
         font-size:15px;
