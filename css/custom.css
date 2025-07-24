@@ -63,3 +63,27 @@
     }
 
 }
+
+
+.lang_wp {
+    position: absolute;
+    right: 30px;
+    top: 18px;
+    text-align: right;
+    z-index: 99999;
+}
+.styled-select {
+    max-width: 180px;
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    background-color: #f3f3f3;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding-right: 35px;
+    position: relative;
+}
+#mainNav {
+    margin-right:30px !important;
+}
