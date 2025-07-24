@@ -66,11 +66,8 @@
 
 
 .lang_wp {
-    position: absolute;
-    right: 30px;
-    top: 18px;
-    text-align: right;
-    z-index: 99999;
+    position: relative;
+
 }
 .styled-select {
     max-width: 180px;
@@ -85,5 +82,5 @@
     position: relative;
 }
 #mainNav {
-    margin-right:30px !important;
+    margin-left:-250px !important;
 }
