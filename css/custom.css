@@ -31,56 +31,8 @@
     object-fit:cover;
 }
 
-@media screen and (min-width:768px) and (max-width:1300px) {
-    .parallax_section_1 {
-        min-height:100vh;
-    }
-}
-
 @media screen and (max-width:767px) {
     .parallax_section_1 {
-        min-height:110vh;
+        min-height:90vh;
     }
-    .comment {
-        font-size:15px;
-    }
-    .carousel_testimonials .pic img,
-    .carousel_testimonials .pic figure {
-        display:none;
-    }
-    .carousel_testimonials .box_overlay {
-        padding: 15px;
-    }
-    .owl-carousel .item img {
-        width:100%;
-        height:auto;
-        min-height:200px;
-        object-fit:cover;
-        max-height:400px;
-    }
-    .pinned-image .pinned_over_content h2 {
-        font-size:35px;
-    }
-
-}
-
-
-.lang_wp {
-    position: relative;
-
-}
-.styled-select {
-    max-width: 180px;
-    overflow: hidden;
-    height: 40px;
-    line-height: 40px;
-    border: none;
-    background-color: #f3f3f3;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    padding-right: 35px;
-    position: relative;
-}
-#mainNav {
-    margin-left:-250px !important;
 }
