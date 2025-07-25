@@ -9,7 +9,7 @@
     display:block;
     position:relative;
     content:"\02605 \02605 \02605 \02605 \02605";
-    color:white;
+    color: #f7c121;
     z-index:10;
     width:100%;
     left:0;
@@ -65,22 +65,20 @@
 }
 
 
-.lang_wp {
-    position: relative;
+.lang-switch {
+    display:block;
+    position:relative;
+    background:rgba(0,0,0,0.5);
+    padding:5px 28px 5px 15px;
+    border-radius:100px;
 
 }
-.styled-select {
-    max-width: 180px;
-    overflow: hidden;
-    height: 40px;
-    line-height: 40px;
-    border: none;
-    background-color: #f3f3f3;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    padding-right: 35px;
+.lang-switch::after {
+    display:inline-block;
+    font-family: "bootstrap-icons";
+    content: "\F3EE";
+    color: #fff;
     position: relative;
-}
-#mainNav {
-    margin-left:-250px !important;
+    right: -15px;
+    top: 2px;
 }
