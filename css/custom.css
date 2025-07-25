@@ -82,3 +82,7 @@
     right: -15px;
     top: 2px;
 }
+
+.logo_normal img {
+    max-width:80vw !important;
+}
