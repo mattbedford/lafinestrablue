@@ -95,6 +95,7 @@
     fill: #019ee2;
 }
 
-.logo_normal img {
+.logo_normal img,
+.logo_sticky img {
     max-width:80vw !important;
 }
