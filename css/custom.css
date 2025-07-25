@@ -61,6 +61,9 @@
     .pinned-image .pinned_over_content h2 {
         font-size:35px;
     }
+    .lang-switch {
+        max-width:80px;
+    }
 
 }
 
