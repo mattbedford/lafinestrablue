@@ -82,6 +82,10 @@
     right: -15px;
     top: 2px;
 }
+.lang-switch:hover,
+.lang-switch:focus {
+    background:#009ee0;
+}
 .chair-icon {
     width: 62px;
     margin-bottom: 36px;
