@@ -71,7 +71,7 @@
     background:rgba(0,0,0,0.5);
     padding:5px 28px 5px 15px;
     border-radius:100px;
-
+    color:white !important;
 }
 .lang-switch::after {
     display:inline-block;
@@ -81,6 +81,11 @@
     position: relative;
     right: -15px;
     top: 2px;
+}
+.chair-icon {
+    width: 62px;
+    margin-bottom: 36px;
+    fill: #019ee2;
 }
 
 .logo_normal img {
