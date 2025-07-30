@@ -716,5 +716,21 @@
 <!-- SPECIFIC SCRIPTS -->
 <script src="/js/slider.js"></script>
 
+<!--Fix accessibility on owl-->
+<script defer>
+    $(document).ready(function() {
+        $('.owl-carousel').each(function () {
+            //Find each set of dots in this carousel
+            $(this).find('.owl-dot').each(function (index) {
+                //Add one to index so it starts from 1
+                $(this).attr('aria-label', index + 1);
+            });
+        });
+    });
+    // Also add atts to buttons on owl sliders
+    $('.owl-prev').attr('aria-label', 'Previous Slide');
+    $('.owl-next').attr('aria-label', 'Next Slide');
+</script>
+
 </body>
 </html>
