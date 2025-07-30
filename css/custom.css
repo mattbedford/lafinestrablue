@@ -3,7 +3,12 @@
 /*============================================================================================*/
 
 
-
+.copy a {
+    text-decoration: underline !important;
+}
+main a:not(.btn_1) {
+    text-decoration: underline !important;
+}
 
 .carousel_testimonials .pic::after {
     display:block;
